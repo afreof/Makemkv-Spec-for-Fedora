@@ -9,7 +9,7 @@
 %global __requires_exclude ^lib(%{_privatelibs})\\.so.*
 
 Name:           makemkv
-Version:        1.14.7
+Version:        1.15.2
 Release:        1%{?dist}
 Summary:        A format converter ("transcoder") for proprietary media
 
@@ -86,6 +86,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 
 # Prebuilt binaries
 %{_bindir}/makemkvcon
+%{_bindir}/sdftool
 %{_datadir}/MakeMKV/appdata.tar
 %{_datadir}/MakeMKV/blues.jar
 %{_datadir}/MakeMKV/blues.policy
@@ -109,7 +110,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 * Fri Mar 15 2019 Ed Marshall <esm@logic.net> - 1.14.3-0
 - Update to latest release.
 
-* Tue Dec  5 2018 Ed Marshall <esm@logic.net> - 1.14.2-0
+* Wed Dec  5 2018 Ed Marshall <esm@logic.net> - 1.14.2-0
 - Update to latest release.
 
 * Tue Nov 13 2018 Ed Marshall <esm@logic.net> - 1.14.1-0
